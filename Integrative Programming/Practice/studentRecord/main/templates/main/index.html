@@ -1,0 +1,70 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<style>
+    .search-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .search-container input[type="text"] {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px 0 0 4px;
+        font-size: 16px;
+    }
+
+    .search-container button {
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-left: none;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .search-container button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<div class="search-container">    
+    <form method="GET" action="{% url 'index' %}">
+        <input type="text" name="q" placeholder="Search..." value="{{ request.GET.q }}">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<table class="table">
+    <tr>
+        <th>Student Number</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Date of Birth</th>
+        <th>Mobile Number</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Year Level</th>
+        <th>Course</th>
+    </tr>
+    {% for s in student_list %}
+    <tr>
+        <td>{{s.id}}</td>
+        <td>{{s.first_name}}</td>
+        <td>{{s.last_name}}</td>
+        <td>{{s.birth_date}}</td>
+        <td>{{s.mobile_num}}</td>
+        <td>{{s.email}}</td>
+        <td>{{s.address}}</td>
+        <td>{{s.year}}</td>
+        <td>{{s.course}}</td>
+    </tr>
+    {% endfor %}
+    
+</table>
+
+{% endblock %}
