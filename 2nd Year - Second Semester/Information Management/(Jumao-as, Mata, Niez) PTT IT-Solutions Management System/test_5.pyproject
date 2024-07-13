@@ -1,0 +1,14 @@
+{
+    "files": [
+        "main.py",
+        "form.ui",
+        "admin.ui",
+        "orderDialog.ui",
+        "purchaseReceiptDialog.ui",
+        "addStaffDialog.ui",
+        "deleteStaffDialog.ui",
+        "serviceDialog.ui",
+        "login.ui",
+        "updateStatusDialog.ui"
+    ]
+}

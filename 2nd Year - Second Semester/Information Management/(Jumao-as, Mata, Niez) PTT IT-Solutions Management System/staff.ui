@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StaffPage</class>
+ <widget class="QWidget" name="StaffPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1007</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Staff Page</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+ background-color: rgb(183, 181, 151);
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">QFrame{
+background-color: rgb(107, 138, 122)
+
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="inventory">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(218, 211, 190);
+color: black;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 5px;
+font-size:16px;
+text-align: center;
+width: 120px
+}
+
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Inventory</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="history">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(218, 211, 190);
+color: black;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 5px;
+font-size:16px;
+text-align: center;
+width: 120px
+}
+
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>History</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="viewOrder">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(218, 211, 190);
+color: black;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 5px;
+font-size:16px;
+text-align: center;
+width: 120px
+}
+
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>View Orders</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="service">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(218, 211, 190);
+color: black;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 5px;
+font-size:16px;
+text-align: center;
+width: 120px
+}
+
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+QPushButton:pressed {
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Service</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="logOut">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+
+background-color: #e74c3c;
+color: black;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 5px;
+font-size:16px;
+text-align: center;
+width: 120px
+}
+
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+QPushButton:pressed {
+background-color: #e74c3c;
+}
+
+s</string>
+        </property>
+        <property name="text">
+         <string>Log Out</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+background-color: rgb(107, 138, 122)
+
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLineEdit" name="productSearch">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QLineEdit:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+           </property>
+           <property name="maxLength">
+            <number>50</number>
+           </property>
+           <property name="placeholderText">
+            <string>Search</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="inventoryTable">
+         <property name="styleSheet">
+          <string notr="true">QWidget {
+    background-color: rgb(183, 181, 151);
+    font: 700 9pt &quot;Segoe UI&quot;;
+    color: black; /* Sets the font color to black */
+}
+</string>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="cornerButtonEnabled">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Category</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Brand</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Price</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Quantity</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Actions</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+background-color: rgb(107, 138, 122)
+
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLineEdit" name="staffSearch">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QLineEdit:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+           </property>
+           <property name="placeholderText">
+            <string>Search</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="staffTable">
+         <property name="styleSheet">
+          <string notr="true">QWidget {
+    background-color: rgb(183, 181, 151);
+    font: 700 9pt &quot;Segoe UI&quot;;
+    color: black; /* Sets the font color to black */
+}
+</string>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>First Name</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Last Name</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Mobile Number</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Address</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Date Hired</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+background-color: rgb(107, 138, 122)
+
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="styleSheet">
+          <string notr="true">QWidget {
+    background-color: rgb(183, 181, 151);
+    font: 700 ;
+    color: black; /* Sets the font color to black */
+}
+
+
+
+</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Purchase History</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QTableWidget" name="purchaseHistoryTable">
+             <property name="styleSheet">
+              <string notr="true">QWidget {
+    background-color: rgb(183, 181, 151);
+    font: 700 9pt &quot;Segoe UI&quot;;
+    color: black; /* Sets the font color to black */
+}
+</string>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <attribute name="horizontalHeaderDefaultSectionSize">
+              <number>200</number>
+             </attribute>
+             <attribute name="horizontalHeaderStretchLastSection">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <column>
+              <property name="text">
+               <string>Date</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Customer</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Actions</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>Service History</string>
+          </attribute>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QTableWidget" name="serviceHistory">
+             <property name="styleSheet">
+              <string notr="true">QWidget {
+    background-color: rgb(183, 181, 151);
+    font: 700 9pt &quot;Segoe UI&quot;;
+    color: black; /* Sets the font color to black */
+}
+</string>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <attribute name="horizontalHeaderStretchLastSection">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <column>
+              <property name="text">
+               <string>Date</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Customer</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Technician</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Device Type</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Service Type</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Total</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Status</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Actions</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

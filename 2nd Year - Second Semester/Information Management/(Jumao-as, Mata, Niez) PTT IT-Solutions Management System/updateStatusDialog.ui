@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UpdateStatusDialog</class>
+ <widget class="QDialog" name="UpdateStatusDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>285</width>
+    <height>141</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color:rgb(183, 181, 151);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="completed">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(218, 211, 190);
+
+color: black;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 10px;
+font-size: 16px;
+padding:2px;
+text-align: center;
+margin-left: 25px;
+margin-right:25px;
+}
+
+QPushButton:hover {
+                    background-color: #2980b9; /* Darker blue on hover */
+                }
+                QPushButton:pressed {
+                    background-color: #1f618d; /* Even darker blue when pressed */
+                }</string>
+       </property>
+       <property name="text">
+        <string>Completed</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelled">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(218, 211, 190);
+
+color: black;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 10px;
+font-size: 16px;
+padding:2px;
+text-align: center;
+margin-left: 25px;
+margin-right:25px;
+}
+
+QPushButton:hover {
+background-color: #e74c3c;
+}
+
+QPushButton:pressed {
+background-color: #e74c3c;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Cancelled</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

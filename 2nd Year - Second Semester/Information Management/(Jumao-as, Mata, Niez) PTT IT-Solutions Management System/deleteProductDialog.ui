@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DeleteProductDialog</class>
+ <widget class="QDialog" name="DeleteProductDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>367</width>
+    <height>134</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Delete Product</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color:rgb(183, 181, 151);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="notification">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    font: 700 ;
+    color: black; /* Sets the font color to black */
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Are you sure you want to delete [product name]?</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="confirm">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(218, 211, 190);
+
+color: black;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 10px;
+font-size: 16px;
+padding:2px;
+text-align: center;
+margin-left: 25px;
+margin-right:25px;
+}
+
+QPushButton:hover {
+                    background-color: #2980b9; /* Darker blue on hover */
+                }
+                QPushButton:pressed {
+                    background-color: #1f618d; /* Even darker blue when pressed */
+                }</string>
+        </property>
+        <property name="text">
+         <string>Confirm</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cancel">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(218, 211, 190);
+
+color: black;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 10px;
+font-size: 16px;
+padding:2px;
+text-align: center;
+margin-left: 25px;
+margin-right:25px;
+}
+
+QPushButton:hover {
+background-color: #e74c3c;
+}
+
+QPushButton:pressed {
+background-color: #e74c3c;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

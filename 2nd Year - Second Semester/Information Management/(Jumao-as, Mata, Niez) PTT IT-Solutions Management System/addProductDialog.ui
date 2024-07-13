@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddProductDialog</class>
+ <widget class="QDialog" name="AddProductDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>386</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Add Product</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color:rgb(183, 181, 151);
+}</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="sizeConstraint">
+    <enum>QLayout::SetMaximumSize</enum>
+   </property>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Category</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="category">
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QComboBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>CPU</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RAM</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Motherboard</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Storage Drive</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PSU</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="name">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QLineEdit:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+       </property>
+       <property name="maxLength">
+        <number>25</number>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Price</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QDoubleSpinBox" name="price">
+       <property name="styleSheet">
+        <string notr="true">QDoubleSpinBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QDoubleSpinBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+</string>
+       </property>
+       <property name="minimum">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>99999.990000000005239</double>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Quantity</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QSpinBox" name="quantity">
+       <property name="styleSheet">
+        <string notr="true">QSpinBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QSpinBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Brand</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="cpuBrand">
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QComboBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Intel</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>AMD</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Core Count</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="coreCount">
+           <property name="styleSheet">
+            <string notr="true">QSpinBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QSpinBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+</string>
+           </property>
+           <property name="minimum">
+            <number>2</number>
+           </property>
+           <property name="maximum">
+            <number>300</number>
+           </property>
+           <property name="singleStep">
+            <number>2</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <layout class="QFormLayout" name="formLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Brand</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="ramBrand">
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QComboBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>ADATA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Corsair</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Crucial</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>G.Skill</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>HyperX</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kingston</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Micron</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Patriot Memory</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Samsung</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SK hynix</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="ramSize">
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QComboBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>4</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>16</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Size (GB)</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <layout class="QFormLayout" name="formLayout_4">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Brand</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="mbBrand">
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QComboBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>ASRock</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Asus</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Biostar</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>EVGA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Gigabyte</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>MSI</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Form Factor</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="mbSize">
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QComboBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>ATX</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Micro-ATX</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Mini-ITX</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_4">
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <layout class="QFormLayout" name="formLayout_5">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Brand</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="storageBrand">
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QComboBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Crucial</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kingston</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Samsung</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SanDisk</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Seagate</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Toshiba</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Western Digital</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Size (GB)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="storageSize">
+           <property name="styleSheet">
+            <string notr="true">QSpinBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QSpinBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+           </property>
+           <property name="minimum">
+            <number>2</number>
+           </property>
+           <property name="maximum">
+            <number>9999</number>
+           </property>
+           <property name="singleStep">
+            <number>2</number>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Type</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QComboBox" name="storageType">
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QComboBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>HDD</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SSD</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_5">
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <layout class="QFormLayout" name="formLayout_6">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_14">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Brand</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="psuBrand">
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QComboBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Antec</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Asus</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Be Quiet!</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Cooler Master</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Corsair</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>EVGA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FSP</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Gigabyte</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>NZXT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Rosewill</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Seasonic</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SilverStone</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Super Flower</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Thermaltake</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>XFX</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_15">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font: 800;
+    color: black; /* Sets the font color to black */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Watts</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="psuWatts">
+           <property name="styleSheet">
+            <string notr="true">QSpinBox{
+background-color: rgb(218, 211, 190);
+color: black;
+
+
+font-size: 16px;
+padding:2px;
+text-align: center;
+
+
+}
+
+QSpinBox:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
+
+</string>
+           </property>
+           <property name="minimum">
+            <number>300</number>
+           </property>
+           <property name="maximum">
+            <number>9999</number>
+           </property>
+           <property name="singleStep">
+            <number>2</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="confirm">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(218, 211, 190);
+
+color: black;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 10px;
+font-size: 16px;
+padding:2px;
+text-align: center;
+margin-left: 25px;
+margin-right:25px;
+}
+
+QPushButton:hover {
+                    background-color: #2980b9; /* Darker blue on hover */
+                }
+                QPushButton:pressed {
+                    background-color: #1f618d; /* Even darker blue when pressed */
+                }</string>
+        </property>
+        <property name="text">
+         <string>Confirm</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cancel">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(218, 211, 190);
+
+color: black;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 10px;
+font-size: 16px;
+padding:2px;
+text-align: center;
+margin-left: 25px;
+margin-right:25px;
+}
+
+QPushButton:hover {
+background-color: #e74c3c;
+}
+
+QPushButton:pressed {
+background-color: #e74c3c;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
