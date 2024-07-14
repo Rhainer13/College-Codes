@@ -1,0 +1,182 @@
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+ body {
+    background: white;
+ }
+
+.container {
+    width:auto;
+    height: 90px;
+    text-align: center;
+    padding-top: 25px;
+    font-family: Arial;
+    font-size: 30px;
+    background: linear-gradient(to right,white,#bfdeff,lightskyblue,#bfdeff,white);
+    font-weight: 500px;
+}
+
+
+  .hidden {
+    display: none;
+  }
+.hidden {
+    display: none;
+  }
+.search-box {
+    align-items: center;
+    width:800px;
+    background: white;
+    margin: 10px; 
+    border-radius: 30px;
+    border: 2px solid black;
+    outline: 20px;
+}
+
+button{
+    background: transparent;
+    border: 0;
+    outline:0;
+}
+
+button .bx {
+    width: 25px;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+input{
+    flex: 1;
+    height: 20px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.result-box ul {
+    border-top: 1px solid #999;
+    line-height:50px ;
+    padding: 0; 
+    margin: 0; 
+    font-size: 14px;
+}
+
+.result-box ul li {
+    list-style: none;
+    border-radius: 3px;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 14px;
+ }
+
+
+.ctu{
+    width: 950px;
+    height: 350px;
+    background: transparent; 
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    border: 12px solid#74bcf2;
+    display: flex;
+    font-family: Arial;
+    margin: 40px 10px;
+    display: flex;
+   
+}
+.ctu1{
+    width: 700px;
+    height: 250px;
+    text-align: left;
+    margin-left: 100px;
+    background: transparent;
+    align-items: center;
+    font-family: Arial;
+   
+}
+.ctu a{
+    margin-left: 20px;
+    text-decoration: underline;
+    font-size: 13px;
+}
+.ctu1 h6 {
+    text-indent: 20px;
+    font-size: 13px;
+    line-height: 1px;
+}
+.ctu1 h5 {
+    text-indent: 20px;
+    font-size: 16px;
+}
+.ctu1 b {
+    text-indent: 30px;
+}
+.ctu1 li {
+    font-size: 13px;
+    line-height: 20px;
+}
+ 
+ .logo {
+   background-image: url('ctulogo.png');
+   background-size: cover; 
+   width: 250px;
+   height: 250px;
+   margin-left: 60px;
+   margin-top: 40px;
+ }
+
+ .logo1 {
+    background-image: url('cnulogo.png');
+    background-size: cover; 
+    width: 250px;
+    height: 250px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.logo2 {
+    background-image: url('upclogo.png');
+    background-size: cover; 
+    width: 250px;
+    height: 250px;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+.info{
+    width: 150px;
+    height: 40px;
+    background: gold;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    display: flex;
+    border: 3px solid yellow;
+    
+
+}
+.info:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+  }
+.info a {
+justify-content: center;
+margin: auto;
+text-decoration: none;
+color: black;
+font-size: 14px;
+font-weight: bold;
+}
+

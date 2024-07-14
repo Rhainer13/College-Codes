@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #daeef8;
+}
+
+/* phase one */
+
+.tutorialpage{
+    width: 100%;
+}
+
+.tutorialpage h1{
+    text-align: center;
+    font-size: 35px;
+    color: #2b9ec2;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: Georgia;
+
+}
+
+.tutorialpage h1::after{
+    content: "";
+    height: 5px;
+    width: 200px;
+    background-color: #2b9ec2;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.wrapper{
+    padding: 0px 60px;
+    margin: 60px auto;
+}
+
+.content{
+    position: absolute;
+    bottom: 35%;
+    left: 7%;
+}
+
+.content h3{
+    color: #222;
+    font-size: 37px;
+    letter-spacing: 1px;
+    font-family: Georgia;
+}
+
+span {
+    color: #2b9ec2;
+    font-family: Georgia;
+}
+
+.content p{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #3d3d3d;
+    margin-top: 20px;
+}
+
+.imagesection{
+    width: 40%;
+    float: right;
+    padding: 0px 30px;
+}
+
+.imagesection img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* phase two */
+
+.readmore{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 450px;
+    font-family: Georgia;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #2b9ec2;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    color: #2b9ec2;
+}
+
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    color: #2b9ec2;
+}
+
+
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    color: #2b9ec2;
+}
+
+.readmorecol{
+    flex-basis: 80%;
+    background: #bcdae4;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    text-align: left;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Public Schools</title>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    
+    <div class="container"><b>PUBLIC UNIVERSITIES & COLLEGES</b></div>
+    <br>
+    <center>
+        <div class = "search-box">
+            <div class = "row">
+                <input type="text" id="searchInput" placeholder="Search School"
+                oninput="searchSections()">
+                <div id="results"></div>
+                <button><i class='bx bx-search-alt'></i></button>
+            </div>
+            <div class ="result-box"></div>
+        </div>
+     
+  <section id="section1">
+    <div class ='ctu' >
+        <left>
+        <div class = "logo"></div>
+        </left>
+        <right>
+        <div class = 'ctu1'>
+           
+         <h5>CEBU TECHNOLOGICAL UNIVERSITY - MAIN</h5>
+         <h6> Address:  M.J. Cuenco Ave, Cor R. Palma Street, 6000 Cebu </h6>
+            <h6>Offered Courses:</h6>
+            <ul>
+                <li>BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</li>
+                <li>BACHELOR OF SCIENCE IN NURSING</li>
+                <li>BACHELOR OF SCIENCE IN MECHANICAL ENGINEERING</li>
+                <li>BACHELOR OF SCIENCE IN MATHEMATICS</li>
+                <li>BACHELOR OF SCIENCE IN HOSPITALITY MANAGEMENT</li>
+
+            </ul>
+
+            <h6>Social media platform:</h6>
+            <b><a href="https://www.facebook.com/ctu.premier">CTU Facebook Page</a></b>
+        </div>
+        <div class ="info ">
+            <a href="https://www.ctu.edu.ph/">ABOUT CTU</a>
+        </div>
+        </right>
+    </section>
+
+
+    <section id = section2>
+        <div class ='ctu' >
+            <left>
+            <div class = "logo1"></div>
+            </left>
+            <right>
+            <div class = 'ctu1'>
+               
+             <h5>CEBU NORMAL UNIVERSITY - MAIN</h5>
+             <h6> Address: Osmeña Blvd, Cebu City, 6000 Cebu </h6>
+                <h6>Offered Courses:</h6>
+                <ul>
+                    <li>BACHELOR OF SECONDARY EDUCATION MAJOR IN ENGLISH</li>
+                    <li>BACHELOR OF SCIENCE IN NURSING</li>
+                    <li>BACHELOR OF ARTS MAJOR IN COMMUNICATION</li>
+                    <li>BACHELOR OF SCIENCE MAJOR IN BIOLOGY</li>
+                    <li>BACHELOR OF TOURISM MANAGEMENT</li>
+                </ul>
+                <h6>Social media platform:</h6>
+                <a href="https://www.facebook.com/cebunormaluniversityofficial">CNU Facebook Page</a>
+            </div>
+            <div class ="info ">
+            <a href="https://cnu.edu.ph/">ABOUT CNU</a>
+        </div>
+            </right>
+        </div>
+    </section>
+        
+    
+    <section id = section3>
+        <div class ='ctu' >
+            <left>
+            <div class = "logo2"></div>
+            </left>
+            <right>
+            <div class = 'ctu1'>
+               
+             <h5>UNIVERSITY OF THE PHILIPPINES CEBU - MAIN</h5>
+             <h6>Address: Gorordo Avenue 6000 Cebu City, Philippines </h6>
+                <h6>Offered Courses:</h6>
+                <ul>
+                    <li>BACHELOR OF SCIENCE IN COMPUTER SCIENCE</li>
+                    <li>BACHELOR OF ARTS IN POLITICAL SCIENCE</li>
+                    <li>BACHELOR OF SCIENCE IN MANAGEMENT</li>
+                    <li>BACHELOR OF FINE ARTS</li>
+                    <li>BACHELOR OF ARTS IN PSYCHOLOGY</li>
+                </ul>
+                <h6>Social media platform:</h6>
+                <a href="https://www.facebook.com/upcebuofficial">UPCEBU Facebook Page</a>
+            </div>
+            <div class ="info ">
+            <a href="https://upcebu.edu.ph/">ABOUT UPCEBU</a>
+        </div>
+            </right>
+        </div>
+    </section>
+    </center>
+   
+    <script>
+        function searchSections() {
+            var input, filter, sections, section, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toLowerCase();
+            sections = document.querySelectorAll('section');
+            resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = '';
+    
+            var hasMatch = false;
+    
+            sections.forEach(function (section) {
+                txtValue = section.textContent || section.innerText;
+                var isMatch = txtValue.toLowerCase().indexOf(filter) > -1;
+    
+                if (isMatch) {
+                    section.classList.remove('hidden');
+                    hasMatch = true;
+                } else {
+                    section.classList.add('hidden');
+                }
+            });
+    
+            if (!hasMatch && filter.trim() !== '') {
+                resultsContainer.innerHTML = '<p>No matches found.</p>';
+            } else {
+                resultsContainer.innerHTML = ''; // Clear the message if there are matches or the input is empty
+            }
+        }
+    </script>
+       
+</body>
+
+</html>

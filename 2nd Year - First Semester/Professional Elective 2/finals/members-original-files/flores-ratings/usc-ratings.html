@@ -1,0 +1,123 @@
+<html>
+     <head>
+        <meta charset="utf-8">
+        <meta  name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>USC Reviews</title>
+        <link rel="stylesheet" href="all-styles.css"/>
+    </head>
+    <body>
+         <main>
+  <ul class='slider'>
+       
+    <li class="item" style="background-image: url(https://i.ibb.co/0QD7QQm/usc-bg1.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/c2hdgtm/usc1.jpg" alt="usc1.jpg">
+        <h2 class='name'>Kathryn B.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star-half-full checked"></span>
+             <br></br>
+        <p class='description'>The classrooms were air-con and this created a cool environment that made the absorption of lessons easier. The relationship between the teachers and students were cordial. The teachers were pleasant and courteous. I found the atmosphere pleasing and I felt safe inside.</p>
+      </div>
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/TkfFPXb/usc-bg2.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/nsmBj7k/usc2.jpg" alt="usc2.jpg">
+        <h2 class='name'>Juan Dela C.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star-half-full checked"></span>
+             <br></br>
+        <p class='description'>They know how to make the subjects easier to understand. I enjoyed attending their classes. The library and classrooms were air-con. This makes me listen more. The library is always full. I were home to read.</p>
+      </div><!-- content -->
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/dtrQ9pp/usc-bg3.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/pf1FrY5/usc3.jpg" alt="usc3">
+        <h2 class='name'>Julia M.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star-half-full checked"></span>
+             <br></br>
+        <p class='description'>USC has concrete buildings, air-conditioned auditorium. The USC owns vast tract of lands which contain the elementary high school, college, and post graduate, and law courses. There is an orderly peaceful, and harmonious atmosphere.</p>
+      </div> <!-- content -->
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/w472Mys/usc-bg4.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/XY8JJMG/usc4.jpg" alt="usc4">
+        <h2 class='name'>Belle M.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <br></br>
+        <p class='description'>The University of San Carlos is a school for everyone. Although it is located around the main street, the faculty still make sure that the atmosphere suitable for learning. The university is equipped with facilities to provide for learning and the professors are highly admirable for the knowledge.</p>
+      </div> <!-- content -->
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/q76bXvg/usc-bg5.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/nDTbYzs/usc5.jpg" alt="usc5">
+        <h2 class='name'>Johnny S.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <br></br>
+        <p class='description'>The professors were unbeatable. They work hard to be able to teach us the things that are very much needed for our course. They share their significant clinical experiences to us and they see to it that we learn different skills that should be learn for us to be topnotch nurses.</p>
+      </div> <!-- content -->
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/x5Jw965/usc-bg6.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/n0pdG79/usc6.jpg" alt="usc6">
+        <h2 class='name'>Kristle V.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <br></br>
+        <p class='description'>I fell in love with the campus. Though it is in the middle of Cebu City, structure and facilities, and down-to-earth students were very conducive to learning—especially the professors who are reliable and competent. I felt that people were there to learn as and I didn't feel judged pressured to fit into a mold. USC became my home.</p>
+      </div> <!-- content -->
+    </li>
+      
+  </ul>
+  
+  
+    <nav class='nav'>
+    <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+    <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+  </nav>
+</main>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+     const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
+</script>
+    </body>
+</html>

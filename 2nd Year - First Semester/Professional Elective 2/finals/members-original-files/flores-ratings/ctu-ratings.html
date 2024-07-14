@@ -1,0 +1,123 @@
+<html>
+     <head>
+        <meta charset="utf-8">
+        <meta  name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>CTU Reviews</title>
+        <link rel="stylesheet" href="all-styles.css"/>
+    </head>
+    <body>
+         <main>
+  <ul class='slider'>
+       
+    <li class="item" style="background-image: url(https://i.ibb.co/sWvYRpK/ctu-bg1.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/sjNwMSB/r1.jpg" alt="r1.jpg">
+        <h2 class='name'>Jisung P.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star-half-full checked"></span>
+             <br></br>
+        <p class='description'>There were traditional teachers and liberal teachers. But along the way, the most important thing is that how you put yourself in every classroom set-up. That means, adjusting in every teacher and classmate was very important to achieve a healthy learning environment.</p>
+      </div>
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/RTdGj1N/ctu-bg2.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/N9WXCHK/r2.jpg" alt="r2.jpg">
+        <h2 class='name'>Renjun H.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <br></br>
+        <p class='description'>Faculty members were great. They were very knowledgeable and skillful. They’re good at honing people’s skills. The school is nice and it has study spaces around, good for breather and relaxing. Lastly, the guards are stricter than most of my professors haha but they are good people.</p>
+      </div><!-- content -->
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/tQBVKcN/ctu-bg3.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/xYLCLV5/r3.jpg" alt="r3.jpg">
+        <h2 class='name'>Hana Mae O.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <br></br>
+        <p class='description'>The professors are nice, good, and very witty. Their intelligence and personality light up our day. I am amazed at every lesson they teach and every practical exam they give. They are the kind of professors that inspire you in a way you want to strive for the better.</p>
+      </div> <!-- content -->
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/C8Xyf00/ctu-bg4.png);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/PD63GfG/r4.jpg" alt="r4.jpg">
+        <h2 class='name'>Enchong D.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <br></br>
+        <p class='description'>For me, CTU is one of the most prestigious schools and has a good background. Also, the skills and experience are so good, especially the teacher, and I like CTU because they have good teaching skills.</p>
+      </div> <!-- content -->
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/h24zRkb/ctu-bg5.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/PrqNYns/r5.jpg" alt="r5.jpg">
+        <h2 class='name'>Jisoo K.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <br></br>
+        <p class='description'>The school is refreshing and has wide facilities. It gives students free scholarships and offers many courses. The school gym is beautiful and newly made. The school has excellent professors, and they are friendly to their students.</p>
+      </div> <!-- content -->
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/r5rxTRT/ctu-bg6.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/3yx0pyf/r6.jpg" alt="r6.jpg">
+        <h2 class='name'>Lia C.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star-half-full checked"></span>
+             <br></br>
+        <p class='description'>CTU is dedicated to creating a supportive and inclusive learning environment where students can thrive and achieve their goals. Professors really know what they are doing, and they are ready to help you as long as you want to help yourself too.</p>
+      </div> <!-- content -->
+    </li>
+      
+  </ul>
+  
+  
+    <nav class='nav'>
+    <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+    <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+  </nav>
+</main>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+     const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
+</script>
+    </body>
+</html>

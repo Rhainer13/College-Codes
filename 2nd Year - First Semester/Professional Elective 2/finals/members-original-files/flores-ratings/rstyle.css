@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,900'); 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: black; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    position: fixed;
+    z-index: 99;
+    width: 100%; 
+    background: white;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+nav .wrapper {
+    position: relative;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.wrapper .nav-links {
+    display: inline-flex;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background: #bfdeff;
+}
+
+.nav-links .mobile-item {
+    display: none;
+}
+
+.nav-links .drop-menu {
+    position: absolute;
+    background: #74bcf2;
+    width: 180px;
+    line-height: 45px;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+.nav-links li:hover .drop-menu {
+    transition: all 0.3s ease;
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.drop-menu li a {
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+}
+
+.arrow {
+    font-size: 25px;
+    color: black; 
+}
+
+.contact li a {
+    background: blue;
+    color: white;
+}
+
+.contact a:active, .contact a:hover {
+    color: black;
+}
+
+table, th, td {
+    margin-left: 40px;
+    margin-top: 60px; 
+    border: none; 
+    padding: 7px; 
+    vertical-align: top;
+}
+
+.mini-menu li, a {
+    list-style: none;
+    text-decoration: none; 
+}
+
+.filter-container {
+    background: white;
+    border-radius: 8px; 
+    padding: 10px;
+}
+
+.filter-container h1 {
+    font-size: 20px; 
+    font-weight: 700;
+}
+
+.filter-container p1 {
+    font-size: 13px; 
+    font-weight: 600; 
+}
+
+#search-bar {
+    padding: 5px 7px; 
+    font-color: black;
+    width: 170px;
+    border: none;
+    border-bottom: 1px solid blue; 
+    font-size: 13px; 
+    margin-bottom: 20px; 
+}
+
+button {
+    padding: 5px 19px;
+    border-radius: 15px;
+    background-color: #bbc9fc;
+    color: #0036f5;
+    cursor: pointer; 
+    border: none;
+    font-size: 11px;
+    margin-right: 5px; 
+    margin-top: 5px;
+}
+
+button:active {
+    background-color: #0036f5;
+    color: #fff;
+}
+
+.checked {
+    color: blue;
+    font-size: 16px; 
+}
+
+#message {
+    font-weight: 700;
+    font-size: 18px; 
+    text-align: center;
+    line-height: 600px;    
+    margin: 0; 
+}
+
+.school-container {    
+    background-color: white; 
+    box-shadow: 1px 5px 10px rgba(0,0,0,.1);
+    padding: 20px;
+    border-radius: 15px; 
+    margin-bottom: 10px; 
+}
+
+.school-container img {
+    float: left; 
+    padding: 3px; 
+    width: 113px; 
+    height: auto; 
+    margin-right: 15px; 
+    margin-top: 20px;
+}
+
+.school-container h1 {
+    font-size: 20px;
+}
+
+.school-container p1 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.school-container p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.see-button  {
+     background-color: blue;
+     border-radius: 9px;
+     border: solid blue;
+     padding: 6px 15px;
+     color: white; 
+     font-weight: 700;
+     margin-top: 8px; 
+     margin-bottom: 5px; 
+     margin-right: 13px;
+}
+
+.see-button:active {
+    background-color: transparent;
+    border-color: blue;
+    color: black; 
+}
+
+.info-button  {
+     background-color: transparent;
+     border-radius: 9px;
+     border: solid black;
+     padding: 6px 15px;
+     color: black; 
+     font-weight: 700;
+}
+
+.info-button:active {
+    background-color: black;
+    border-color: black;
+    color: white; 
+}
+
+.map {
+     border-radius: 15px; 
+     border: none; 
+     clip-path: inset(70px 0 14px 0 round 15px);
+     margin-top: -70px; 
+     margin-left: 50px;
+}

@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    background-color:#05b0db;
+}
+
+/* for navigation panel */
+ul {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 40px;
+    margin: 0px;
+    z-index: 1;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 10px; 
+}
+
+ul li:last-child a:not(:hover) {
+    background-color: red;
+    border-radius: 20px;
+    color: black;
+}
+
+ul li:last-child a:hover {
+    background-color: yellow;
+    border-radius: 20px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+/* for image */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+/* for text introduction */
+.text-overlay-1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 3vw;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: #05b0db; /* Text color */
+    padding: 10px;
+    border-radius: 5px; /* Optional: Rounded corners for the text box */
+}
+
+.text-overlay-2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 5vw;
+    position: absolute;
+    top: 34%;
+    left: 10%;
+    color: #fff; /* Text color */
+    padding: 10px;
+    border-radius: 5px; /* Optional: Rounded corners for the text box */
+}
+
+.text-overlay-3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 3vw;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: #05b0db; /* Text color */
+    padding: 10px;
+    border-radius: 5px; /* Optional: Rounded corners for the text box */
+}
+
+/* for video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+}
+
+video {
+    border-radius: 20px;
+    border: 5px solid black;
+    width: 90vh;
+    height: auto;
+}
+
+.page-3 {
+    background-color: pink;
+    padding: 20px;
+}
+
+.page-3-1 {
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+    margin: 5%;
+}
+
+.page-3-1 h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 300%;
+}
+
+.page-3-1 p{
+    font-family: sans-serif;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+button {
+    outline: 1px solid black;
+    margin: 0 50%;
+}
+
+.link {
+    margin: 5% 46%;
+}
+
+.link a:hover {
+    background-color:unset;
+}
+
+/* .link a {
+    target
+} */
+
+.fa-facebook {
+    color: blue;
+    font-size: 500%;
+}
+
+.fa-facebook:hover {
+    color: rgb(59, 59, 251);
+    font-size: 500%;
+}
+
+/* interests */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image:hover .description {
+    opacity: 1;
+}
+
+.interest h1{
+    text-align: center;
+    text-shadow: 3px 3px 5px white;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+/* table */
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: left;
+}
+
+/* Apply some basic styling to the table */
+table {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 70%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  /* Style the table header (thead) */
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Style the table header cells (th) */
+  th {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the table rows (tbody) */
+  tr {
+    background-color: #fff;
+  }
+  
+  /* Style the table data cells (td) */
+  td {
+    padding: 10px;
+  }
+  
+  /* Add some hover effect to table rows */
+  tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+/* map location */
+iframe {
+    width: 400px;
+    height: 400px; /* You can adjust the height as needed */
+    border: 4px solid black;
+}
+
+/* contact us form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* for audio */
+.music-player {
+    width: 300px;
+    margin: 5% auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+
+  /* Style for the audio controls */
+  audio {
+    width: 100%;
+  }
+
+  /* Style for the image */
+  img {
+    max-width: 100%;
+  }

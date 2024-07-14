@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/rubio-private.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="icon" href="images/favicon/favicon.ico" />
+
+    <title>Private Schools</title>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><i class="fa fa-compass logo" style="font-weight: 100; font-size: 35px; color: blue;"></i>&nbsp;Cebu City College Finder</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ang-tutorialpage.html">Tutorial</a></li>
+                <li>
+                    <a href="#" class="desktop-item">University&nbsp;<i class="fa fa-sort-desc arrow"></i></a>
+                    <ul class="drop-menu">
+                        <li><a href="sayaboc-public.html">Public</a></li>
+                        <li><a href="rubio-private-2.html">Private</a></li>
+                    </ul>
+                </li>
+                <li><a href="flores-schoolratings.html">Ratings</a></li>
+                <div class="contact">
+                    <li><a href="ranido-teampage.html">Contact Us</a></li>
+                </div>
+            </div>
+        </nav>
+    <table>
+        <tr>
+            <td>
+                <div class="search-box">
+                    <div class="row">
+                        <input type="text" id="searchInput" placeholder="Search School" oninput="searchSections()">
+                        <div id="results"></div>
+                        <button class="icon"><i class='bx bx-search-alt'></i></button>
+                    </div>
+                    <div class="result-box"></div>
+                </div>
+                <div class="picture">
+                    <img src="images/sayaboc/tagline.png" alt="number 8" class="image">
+                </div>
+            </td>
+
+            <td style="width: 750px;">
+                <div id="section1" class="school-container">
+                    <div class="image" data-title="cit" category="Private">
+                        <img src="images/rubio/Cebu_Institute_of_Technology_University_logo.png" alt="ctu.png">
+                        <h1>CEBU INSTITUTE OF TECHNOLOGY UNIVERSITY</h1>
+                        <i style="font-size:12px" class="fa">&#xf041;</i>
+                        <p1>N. BACALSO AVE.CEBU, CITY PHILIPPINES</p1>
+                        <br><br>
+                        <p2>OFFERED COURSES:</p2>
+                        <ul>
+                            <li>&emsp;&emsp;• &emsp;BACHELOR OF SCIENCE IN ARCHITECTURE</li>
+                            <li>&emsp;&emsp;• &emsp;BACHELOR OF SCIENCE IN MINING ENGINEERING</li>
+                            <li>&emsp;&emsp;• &emsp;BACHELOR OF SCIENCE IN CIVIL ENGINEERING</li>
+                            <li>&emsp;&emsp;• &emsp;COLLEGE OF CRIMINAL JUSTICE</li>
+                            <li>&emsp;&emsp;• &emsp;COLLEGE OF COMPUTER STUDIES</li>
+                        </ul>
+                        <button class="see-button" onclick="window.location.href='https://www.facebook.com/CITUniversity?mibextid=ZbWKwL';">Facebook Page</button>
+                        <button class="info-button" onclick="window.location.href='https://cit.edu/cit-vision-mission-primer/';">Visit Official Website</button>
+                    </div>
+                </div>
+
+                <div id="section2" class="school-container">
+                    <div class="image" data-title="cit" category="Private">
+                        <img src="images/rubio/University_of_San_Jose–Recoletos_logo.png" alt="cnu.png">
+                        <h1>UNIVERSITY OF SAN JOSE RECOLETOS</h1>
+                        <i style="font-size:12px" class="fa">&#xf041;</i>
+                        <p1>Corner P. Lopez and Magallanes Sts., Cebu City, Cebu, Philippines</p1>
+                        <br><br>
+                        <p2>OFFERED COURSES:</p2>
+                        <ul>
+                            <li>&emsp;&emsp;• &emsp;SCHOOL OF BUSINESS & MANAGEMENT</li>
+                            <li>&emsp;&emsp;• &emsp;SCHOOL OF LAW</li>
+                            <li>&emsp;&emsp;• &emsp;SCHOOL OF ART & SCIENCES</li>
+                            <li>&emsp;&emsp;• &emsp;SCHOOL OF EDUCATION</li>
+                            <li>&emsp;&emsp;• &emsp;SCHOOL OF COMPUTER STUDIES</li>
+                        </ul>
+                        <button class="see-button" onclick="window.location.href='https://www.facebook.com/USJRofficial';">Facebook Page</button>
+                        <button class="info-button" onclick="window.location.href='https://usjr.edu.ph/about/';">Visit Official Website</button>
+                    </div>
+                </div>
+
+                <div id="section3" class="school-container">
+                    <div class="image" data-title="cit" category="Private">
+                        <img src="images/rubio/university-of-san-carlos-logo (1).png" alt="upcebu.png">
+                        <h1>UNIVERSITY OF SAN CARLOS</h1>
+                        <i style="font-size:12px" class="fa">&#xf041;</i>
+                        <p1>Pantaleon del Rosario Street, Cebu City, Philippines 6000</p1>
+                        <br><br>
+                        <p2>OFFERED COURSES:</p2>
+                        <ul>
+                            <li>&emsp;&emsp;• &emsp;BACHELOR OF SCIENCE IN COMPUTER ENGINEERING</li>
+                            <li>&emsp;&emsp;• &emsp;BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION</li>
+                            <li>&emsp;&emsp;• &emsp;BACHELOR OF SCIENCE IN CHEMICAL ENGINEERING</li>
+                            <li>&emsp;&emsp;• &emsp;BACHELOR OF SCIENCE IN NURSING</li>
+                            <li>&emsp;&emsp;• &emsp;BACHELOR OF SCIENCE IN LAW</li>
+                        </ul>
+                        <button class="see-button" onclick="window.location.href='https://www.facebook.com/USC.Cebu';">Facebook Page</button>
+                        <button class="info-button" onclick="window.location.href='https://www.usc.edu.ph/';">Visit Official Website</button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script>
+        function searchSections() {
+            var input, filter, sections, section, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toLowerCase();
+            sections = document.querySelectorAll('.school-container');
+            resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = '';
+
+            var hasMatch = false;
+
+            sections.forEach(function (section) {
+                txtValue = section.textContent || section.innerText;
+                var isMatch = txtValue.toLowerCase().indexOf(filter) > -1;
+
+                if (isMatch) {
+                    section.classList.remove('hidden');
+                    hasMatch = true;
+                } else {
+                    section.classList.add('hidden');
+                }
+            });
+
+            if (!hasMatch && filter.trim() !== '') {
+                resultsContainer.innerHTML = '<p>No matches found.</p>';
+            } else {
+                resultsContainer.innerHTML = ''; // Clear the message if there are matches or the input is empty
+            }
+        }
+    </script>
+</body>
+</html>

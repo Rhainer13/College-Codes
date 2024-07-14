@@ -1,0 +1,123 @@
+<html>
+     <head>
+        <meta charset="utf-8">
+        <meta  name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>USJ-R Reviews</title>
+        <link rel="stylesheet" href="styles/flores-all-styles.css"/>
+    </head>
+    <body>
+         <main>
+  <ul class='slider'>
+       
+    <li class="item" style="background-image: url(https://i.ibb.co/SNw8wBr/usjr1.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/mvNHpsJ/p1.jpg" alt="p1">
+        <h2 class='name'>Sunoo K.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <br></br>
+        <p class='description'>It is considered as one of the best in the course of BEED. Its training facilities include a laboratory which is modern by Filipino standard. The teachers really give their best in educating the students. Reciprocally, the students have become licensed educators by passing the Board exams.</p>
+      </div>
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/QX9Mv1x/usjr2.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/KGQ6VWZ/p2.jpg" alt="p2">
+        <h2 class='name'>Sunghoon P.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star-half-full checked"></span>
+             <br></br>
+        <p class='description'>USJ-R is a very popular private school and has many students. There are good facilities, including a laboratory for biology students. The teachers are gentle and friendly. The faculty and students have social interactions during Christmas and certain religious activities.</p>
+      </div><!-- content -->
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/rsGwTHk/usjr3.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/9vk2jR4/p3.jpg" alt="p3">
+        <h2 class='name'>Yeji H.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star-half-full checked"></span>
+             <br></br>
+        <p class='description'>The professors are so knowledgeable and approachable. The school atmosphere is conducive to learning and has a complete facilities.</p>
+      </div> <!-- content -->
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/zJ7hQJm/usjr4.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/t3Q31hJ/p4.jpg" alt="p4">
+        <h2 class='name'>Nayeon I.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <br></br>
+        <p class='description'>As a student in university, I can say that it is an amazing place to spend your whole college student experience. The environment is good because most of the students would choose to interact with each other. The tuition is reasonable and they also provide a list of scholarships and discounts for the students.</p>
+      </div> <!-- content -->
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/n71JwPX/usjr5.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/NyNbr8f/p5.jpg" alt="p5">
+        <h2 class='name'>Jay P.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <br></br>
+        <p class='description'>Enrolling at the University of San Jose Recoletos was a fulfilling decision. The dedicated faculty, vibrant campus life, and emphasis on practical learning created an enriching academic experience. I feel well-prepared for the future, thanks to USJR's commitment to holistic development.</p>
+      </div> <!-- content -->
+    </li>
+    
+    
+    <li class="item" style="background-image: url(https://i.ibb.co/HpqdLjt/usjr6.jpg);">
+      <div class='content'>
+        <img class="profile" src="https://i.ibb.co/MMThbJt/p6.jpg" alt="p6">
+        <h2 class='name'>Giovanni F.</h2>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star-o checked"></span>
+             <br></br>
+        <p class='description'>So, USJR is alright, but the classes can get a bit crowded. Profs are hit or miss, some are cool, others not so much. Campus life is buzzing, but they could use an upgrade on facilities. Overall, it's decent, but not blowing my mind.</p>
+      </div> <!-- content -->
+    </li>
+      
+  </ul>
+  
+  
+    <nav class='nav'>
+    <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+    <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+  </nav>
+</main>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+     const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
+</script>
+    </body>
+</html>

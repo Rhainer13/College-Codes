@@ -1,0 +1,214 @@
+body {
+    margin: 1%;
+    /* background-image: url(/final-project/images/map-of-cebu.png); */
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* sidebar website logo and title*/
+.website-logo {
+    display: inline;
+    height: 2.5vh;
+}
+
+.website-name {
+    display: inline;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+/* sidebar navigation panel*/
+aside {
+    opacity: 80%;
+    float: left;
+    height: 90vh;
+    width: 23%;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    padding: 1%;
+    background-color: #ADD8E6;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+    padding: 60% 0;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 160%;
+    padding-left: 3%;
+    /* border: 1px solid black; */
+}
+
+li:hover {
+    background-color: #94bac6;
+    border-radius: 10px;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* main content */
+main {
+    opacity: 80%;
+    float: left;
+    height: 90vh;
+    width: 71.7%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    margin-left: 1%;
+    padding: 1%;
+    background-color: #38c4ef;
+}
+
+main .map-container {
+    /* border: 1px solid black; */
+    /* width: 70%; */
+    /* margin-left: 30%; */
+    /* padding: 0; */
+    /* margin: 0; */
+}
+
+.info {
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 550px;
+    top: 10%;
+    left: 30%;
+    background-color: wheat;
+    display: none;
+}
+
+.info .image-container {
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 260px;
+    height: 150px;
+    z-index: 1;
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* hover public universities */
+#public1:hover + .ctu-main {
+    display: block;
+}
+
+#public2:hover + .cnu-main {
+    display: block;
+}
+
+#public3:hover + .up-cebu {
+    display: block;
+}
+
+/* hover private universities */
+#private1:hover + .usc-main {
+    display: block;
+}
+
+#private2:hover + .usjr {
+    display: block;
+}
+
+#private3:hover + .citu {
+    display: block;
+}
+
+.school-name {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+.map-of-cebu {
+    height: 85vh;
+    position: absolute;
+    left: 57.7%;
+    /* border: 1px solid black; */
+}
+
+.public, .private {
+    /* display: none; */
+    position: absolute;
+    height: 3%;
+    z-index: 1;
+}
+
+/* public/state universities */
+#ctu-main {
+    /* opacity: 50%; */
+    /* display: none; */
+    left: 71.5%;
+    top: 49.1%;
+}
+
+#cnu-main {
+    /* opacity: 50%; */
+    /* display: none; */
+    left: 70.8%;
+    top: 49.5%;
+}
+
+#up-cebu {
+    /* opacity: 50%; */
+    /* display: none; */
+    left: 71%;
+    top: 48%;
+}
+
+/* private universities */
+#usc-main {
+    /* opacity: 50%; */
+    /* display: none; */
+    z-index: 2;
+    left: 71%;
+    top: 48.5%;
+}
+
+#usjr {
+    /* opacity: 50%; */
+    /* display: none; */
+    left: 71%;
+    top: 49.7%;
+}
+
+#citu {
+    /* opacity: 50%; */
+    /* display: none; */
+    left: 70.5%;
+    top: 49.5%;
+}
+
+/* footer */
+footer p {
+    /* border: 1px solid black; */
+    /* margin: 0; */
+    /* padding: 0; */
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
